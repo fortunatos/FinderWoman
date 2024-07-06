@@ -56,7 +56,7 @@ document.title = 'FinderWoman: ' + RTR2 + ' CRD-03';
 
 <body translate="no">
 
-<main id='ldDesktop' class="wrapper background-backgroundcolor">
+<main id='ldDesktop' style="display:none" class="wrapper background-backgroundcolor">
 		<section class="section">
 			<header><img class="image-url" src="18.png" alt="" width="120" height="120">
 			</header>
@@ -91,12 +91,13 @@ jQuery(document).ready(function($){
 
 
     if (agentID) {
-    document.getElementById("ldDesktop").style.display = 'none';
+	
     window.location.href = 'https://bgfffig.hornylocls.com/s/63d00e240fcd5?subsource=FinderWoman'; 
 
     } else {
 	
-    document.getElementById("container-imagem").style.display = 'none';
+	document.getElementById("ldDesktop").style.display = '';
+        document.getElementById("container-imagem").style.display = 'none';
 	document.getElementById("destination_url").href = 'https://bgfffig.hornylocls.com/s/63d00e240fcd5?subsource=FinderWoman';
 
   }
